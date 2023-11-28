@@ -122,7 +122,7 @@ Select a new stage and give it a name, then deploy the API
 To execute our API from the local machine, we are going to use the Curl command. You can choose to use Postman
 
 
-curl -X POST -d "{\"operation\":\"create\",\"tableName\":\"apigate_table\",\"payload\":{\"Item\":{\"table_id\":\"1\",\"name\":\"Bob\"}}}" https://$API.execute-api.$REGION.amazonaws.com/production/DynamoDBManager
+$ curl -X POST -d "{\"operation\":\"create\",\"tableName\":\"apigate_table\",\"payload\":{\"Item\":{\"table_id\":\"1\",\"name\":\"Bob\"}}}" https://$API.execute-api.$REGION.amazonaws.com/production/DynamoDBManager
 
 
 
@@ -144,6 +144,7 @@ Add a second item.
 
 
 List the items via curl.
+
 
 {
     "operation": "list",
