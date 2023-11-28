@@ -68,6 +68,7 @@ https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/blob/main/api_lambda_dyna
 https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/blob/main/api_lambda_dynamodb_img/add_lambda.png
 
 III. Create API
+
 1.create a rest API call "lambda_DynamoDB_ops" 
 
 https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/blob/main/api_lambda_dynamodb_img/create_rest_api.png
@@ -82,10 +83,12 @@ https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/blob/main/api_lambda_dyna
    https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/blob/main/api_lambda_dynamodb_img/add_lambda.png
 
 4. Deploy the API
+   
    select a new stage and give it a name, then deploy the API
+   
+https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/blob/main/api_lambda_dynamodb_img/deploy.jpg
 
-
-5. Running the solution
+6. Running the solution
 To execute our API from the local machine, we are going to use the Curl command. You can choose to use Postman
 
 curl -X POST -d "{\"operation\":\"create\",\"tableName\":\"apigate_table\",\"payload\":{\"Item\":{\"table_id\":\"1\",\"name\":\"Bob\"}}}" https://$API.execute-api.$REGION.amazonaws.com/production/DynamoDBManager
