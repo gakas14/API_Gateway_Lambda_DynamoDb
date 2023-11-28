@@ -2,9 +2,10 @@
 Build an API Gateway with Lambda and DynamoDB
 I. Create a lambda role and function:
 1. Create a lambda role with permission to DynamoDB and CloudWatch Logs.
+2. 
 https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/blob/main/api_lambda_dynamodb_img/lambda_role.png
 
-2. Create the lambda function
+3. Create the lambda function
    create the lambda function name "apigateway_lambda_function", runtime with Python latest version, with execution role choose the lambda role created previously
    
    https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/blob/main/api_lambda_dynamodb_img/create_lambda_function1.png
@@ -14,13 +15,13 @@ https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/blob/main/api_lambda_dyna
    Replace the boilerplate coding with the following code snippet and click "Save"
    from __future__ import print_function
 
-import boto3
-import json
+   import boto3
+   import json
 
-print('Loading function')
+   print('Loading function')
 
 
-def lambda_handler(event, context):
+   def lambda_handler(event, context):
     '''Provide an event that contains the following keys:
 
       - operation: one of the operations in the operations dict below
@@ -50,7 +51,7 @@ def lambda_handler(event, context):
         raise ValueError('Unrecognized operation "{}"'.format(operation))
 
 
-    3. Test Lambda Function
+3. Test Lambda Function
     https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/blob/main/api_lambda_dynamodb_img/test_event.png
 
     https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/blob/main/api_lambda_dynamodb_img/create_test_event.png
