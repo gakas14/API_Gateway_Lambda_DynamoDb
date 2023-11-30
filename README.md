@@ -1,6 +1,10 @@
 # API_Gateway_Lambda_DynamoDB
 Build an API Gateway with Lambda and DynamoDB
 
+![Api_Lambda_DynamoDB](https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/assets/74584964/8d8e58a0-ecec-48a6-8348-250a9334573b)
+
+
+
 I. Create a lambda role and function:
 
 1. Create a lambda role with permission to DynamoDB and CloudWatch Logs.
