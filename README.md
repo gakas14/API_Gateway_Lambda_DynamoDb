@@ -1,13 +1,11 @@
 # API_Gateway_Lambda_DynamoDB
-Build an API Gateway with Lambda and DynamoDB
-
-We created one resource (DynamoDBManager) and defined one method (POST) on it. A Lambda function backs the method. That is when you call the API through an HTTPS endpoint, Amazon API Gateway invokes the Lambda function.
+We created one resource (DynamoDBManager) and defined one method (POST). A Lambda function backs the API. Amazon API Gateway invokes the Lambda function when you call the API through an HTTPS endpoint.
 
 The POST method on the DynamoDBManager resource supports the following DynamoDB operations:
 
-   - Create, update, and delete an item.
-   - Read an item.
-   - Scan an item.
+Create, update, and delete an item.
+Read an item.
+Scan an item.
 
 
 ![Api_Lambda_DynamoDB](https://github.com/gakas14/API_Gateway_Lambda_DynamoDb/assets/74584964/8d8e58a0-ecec-48a6-8348-250a9334573b)
